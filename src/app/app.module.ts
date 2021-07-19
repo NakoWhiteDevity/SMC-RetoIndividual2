@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BarralateralComponent } from './componentes/barralateral/barralateral.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
+import { PrimeroComponent } from './componentes/principal/primero/primero.component';
 
 const routes: Routes = [
   {path:'',component:PrincipalComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     BarralateralComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    PrimeroComponent
   ],
   imports: [
     BrowserModule,
