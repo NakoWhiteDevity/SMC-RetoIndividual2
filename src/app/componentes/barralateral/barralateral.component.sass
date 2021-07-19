@@ -4,22 +4,30 @@
     min-width: 15vw
     margin: 0px
     padding: 15px
-    background-color: grey
+    background-color: black
     position: fixed
     border-right: 1px solid lightgrey
-    display: flex
-    flex-wrap: wrap
-    flex-direction: row
-    align-items: flex-start
-    .imagen,.menu,.cs
-        min-width: 100%
-    .opcion
+    a
+        text-decoration: none
+    .realmain
+        min-height: 60%
         display: flex
+        flex-wrap: wrap
         flex-direction: row
-        flex-wrap: nowrap
-        align-items: center
-        background-color: red
-        margin: 10px 0px
-        i,p
-            font-size: 1.2rem
-            margin: 5px
+        .opcion
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            align-items: center
+            margin: 10px 0px
+            i,p
+                font-size: 1.2rem
+                margin: 5px
+                color: white
+        .imagen,.menu,.cs
+            margin: 20px 0px
+            img
+                margin: 5px
+    .voidmain
+        min-height: 40%
+    
