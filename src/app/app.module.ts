@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BarralateralComponent } from './componentes/barralateral/barralateral.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { PrimeroComponent } from './componentes/principal/primero/primero.component';
+import { PuestobuscadoComponent } from './componentes/principal/puestobuscado/puestobuscado.component';
 
 const routes: Routes = [
   {path:'',component:PrincipalComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
     AppComponent,
     BarralateralComponent,
     PrincipalComponent,
-    PrimeroComponent
+    PrimeroComponent,
+    PuestobuscadoComponent,
   ],
   imports: [
     BrowserModule,
