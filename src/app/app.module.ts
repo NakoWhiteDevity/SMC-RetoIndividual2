@@ -4,9 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BarralateralComponent } from './componentes/barralateral/barralateral.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
+import { CromosComponent } from './componentes/cromos/cromos.component';
 
 const routes: Routes = [
   {path:'',component:PrincipalComponent},
+  {path:'nft',component:CromosComponent},
   {path:'**',redirectTo:'',pathMatch:'full'}
 ];
 
@@ -15,6 +17,7 @@ const routes: Routes = [
     AppComponent,
     BarralateralComponent,
     PrincipalComponent,
+    CromosComponent,
   ],
   imports: [
     BrowserModule,
