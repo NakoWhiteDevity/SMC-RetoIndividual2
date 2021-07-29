@@ -9,7 +9,7 @@ export class CromosComponent implements OnInit {
 
   constructor() { }
 
-  anre:boolean = false ; girar(){this.anre = !this.anre;} ;
+  anre:boolean = true ; girar(){this.anre = !this.anre;} ;
 
   ngOnInit(): void {}
 
