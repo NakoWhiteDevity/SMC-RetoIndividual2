@@ -13,11 +13,10 @@ export class RadarchartService {
   public radarChartOptions: RadialChartOptions = {
     responsive: true,
   };
-  public radarChartLabels: Label[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
+  public radarChartLabels: Label[] = ['Angular/Trabajo en equipo','Python/Inglés','JavaScript','TypeScript','CSS'];
 
   public radarChartData: ChartDataSets[] = [
-    { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
+    { data: [100,76,78,95,12], label: 'Hard skills' }
   ];
   public radarChartType: ChartType = 'radar';
 
