@@ -1,7 +1,8 @@
 <div class="nuweNFT">
     
     <div class="maincard">
-        <div class="tarjeta">
+        
+        <div class="tarjetaan" *ngIf='anre' (dblclick)="girar()" >
             
             <div class="sup">
                 <div class="ranksp">
@@ -55,6 +56,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="tarjetarev" *ngIf='!anre' (dblclick)="girar()" >
+            
+            <div class="fotonombrerol">
+                <img src="../../../assets/fotostock/avatar.jpg" class="foto" alt="">
+                <div class="nombrerol">
+                    <p class="nombre">@RebeccaDev</p>
+                    <p class="rol">WebDev Junior</p>
+                </div>
+                <img src="../../../assets/qr/qrtransparente.png" alt="" class="qr">
+            </div>
+
+        </div>
+
     </div>
 
     <div class="mincard">
