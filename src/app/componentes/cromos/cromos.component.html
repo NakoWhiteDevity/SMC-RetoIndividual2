@@ -33,7 +33,12 @@
             </div>
 
             <div class="datacanvas">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nam delectus fugit labore incidunt eos?
+                <canvas baseChart
+                [datasets]="_rc.radarChartData"
+                [options]="_rc.radarChartOptions"
+                [labels]="_rc.radarChartLabels"
+                [chartType]="_rc.radarChartType">
+                </canvas>
             </div>
 
             <div class="participacion">

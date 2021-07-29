@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RadarchartService } from 'src/app/servicios/radarchart.service';
 
 @Component({
   selector: 'app-cromos',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CromosComponent implements OnInit {
 
-  constructor() { }
+  constructor( public _rc:RadarchartService ) { }
 
   anre:boolean = true ; girar(){this.anre = !this.anre;} ;
 

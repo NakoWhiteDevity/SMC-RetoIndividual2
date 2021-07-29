@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BarralateralComponent } from './componentes/barralateral/barralateral.component';
 import { PrincipalComponent } from './componentes/principal/principal.component';
 import { CromosComponent } from './componentes/cromos/cromos.component';
+import { ChartsModule } from 'ng2-charts';
 
 const routes: Routes = [
   {path:'',component:PrincipalComponent},
@@ -17,11 +18,12 @@ const routes: Routes = [
     AppComponent,
     BarralateralComponent,
     PrincipalComponent,
-    CromosComponent,
+    CromosComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
