@@ -10,11 +10,12 @@ $nuwebg : #232730
     overflow: hidden
     display: flex
     flex-direction: row
-    flex-wrap: wrap
+    flex-wrap: nowrap
     .maincard
         min-width: 60%
         max-width: 60%
         min-height: 100%
+        max-height: 100%
         display: flex
         justify-content: center
         align-items: center
@@ -122,10 +123,57 @@ $nuwebg : #232730
                 .par
                     min-width: 100%
                     text-align: center
+                    margin-top: 5px
                 .item
                     display: flex
                     justify-content: space-between
                     align-items: center
                     min-width: 50%
                     padding: 0px 20px
+                    margin: 5px 0px
+    .mincard
+        min-width: 40%
+        max-width: 40%
+        min-height: 100%
+        max-height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        .tarjeta
+            max-height: 60%
+            min-width: 60%
+            max-width: 60%
+            border-radius: 15px
+            border: 5px solid green
+            .nombrerol
+                margin: 10px 0px
+                p
+                    margin: 0px
+                    padding: 0px
+                    text-align: center
+            .foto
+                display: flex
+                justify-content: center
+                align-items: center
+                max-width: 100%
+                max-height: 60%
+                img
+                    max-width: 80%
+                    border-radius: 15px
+            .emblemapos
+                display: flex
+                flex-direction: row
+                flex-wrap: nowrap
+                align-items: center
+                justify-content: space-between
+                margin-top: -30px
+                padding: 0px 25px
+                .emblema
+                    max-width: 60px
+                    padding-bottom: 30px
+                .posicion
+                    font-weight: 700
+                    font-size: 3rem
+                    padding-top: 30px
+
                 
