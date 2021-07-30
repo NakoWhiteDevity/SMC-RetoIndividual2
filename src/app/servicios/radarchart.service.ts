@@ -16,10 +16,10 @@ export class RadarchartService {
       events:[],
       scales:{
         yAxes:[
-          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat',}}
+          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat',fontSize:20}}
         ],
         xAxes:[
-          {ticks:{fontColor:'white',fontFamily:'Montserrat'}}
+          {ticks:{fontColor:'white',fontFamily:'Montserrat',fontSize:20}}
         ]
         },
     },
@@ -36,10 +36,10 @@ export class RadarchartService {
       events:[],
       scales:{
         yAxes:[
-          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat'}}
+          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat',fontSize:20}}
         ],
         xAxes:[
-          {ticks:{fontColor:'white',fontFamily:'Montserrat'}}
+          {ticks:{fontColor:'white',fontFamily:'Montserrat',fontSize:20}}
         ]
         },
     },
