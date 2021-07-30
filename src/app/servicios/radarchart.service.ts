@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ChartDataSets, ChartType, RadialChartOptions } from 'chart.js';
+import { ChartData, ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Injectable({
@@ -9,15 +9,33 @@ export class RadarchartService {
 
   constructor() { }
 
-  // Radar
-  public radarChartOptions: RadialChartOptions = {
-    responsive: true,
-  };
-  public radarChartLabels: Label[] = ['Angular/Trabajo en equipo','Python/Inglés','JavaScript','TypeScript','CSS'];
+  hardskills:grafica = {
+    //opciones : {responsive: true,scales: {yAxes:[{ticks: {beginAtZero:true}}]}},
+    opciones : {
+      responsive: true,
+      scales: {yAxes:[{ticks: {beginAtZero:true}}]},
+      plugins:{legend:{labels:{font:{size:50}}}}
+    },
+    etiquetas : ['Angular','Python','Javascript','Typescript','CSS'],
+    tipo : 'bar',
+    leyenda : false,
+    datos: [{data: [80,45,90,91,31]}]
+  }
 
-  public radarChartData: ChartDataSets[] = [
-    { data: [100,76,78,95,12], label: 'Hard skills' }
-  ];
-  public radarChartType: ChartType = 'radar';
+  softskills:grafica = {
+    opciones : {responsive: true,scales: {yAxes:[{ticks: {beginAtZero:true}}]}},
+    etiquetas : ['En Equipo','Resolutividad','Comunicación','Análisis','Inglés'],
+    tipo : 'bar',
+    leyenda : false,
+    datos: [{data: [55,60,60,95,60]}]
+  }
 
+}
+
+interface grafica {
+  opciones:ChartOptions,
+  etiquetas:Label[],
+  tipo:ChartType,
+  leyenda:boolean,
+  datos:ChartDataSets[]
 }

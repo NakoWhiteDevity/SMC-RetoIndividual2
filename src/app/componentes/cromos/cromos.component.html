@@ -34,11 +34,23 @@
 
             <div class="datacanvas">
                 <canvas baseChart
-                [datasets]="_rc.radarChartData"
-                [options]="_rc.radarChartOptions"
-                [labels]="_rc.radarChartLabels"
-                [chartType]="_rc.radarChartType">
+                [datasets]="_rc.hardskills.datos"
+                [labels]="_rc.hardskills.etiquetas"
+                [options]="_rc.hardskills.opciones"
+                [legend]="_rc.hardskills.leyenda"
+                [chartType]="_rc.hardskills.tipo">
                 </canvas>
+                
+                <!--
+                <canvas baseChart
+                [datasets]="_rc.softskills.datos"
+                [labels]="_rc.softskills.etiquetas"
+                [options]="_rc.softskills.opciones"
+                [legend]="_rc.softskills.leyenda"
+                [chartType]="_rc.softskills.tipo">
+                </canvas>
+                -->
+                
             </div>
 
             <div class="participacion">
