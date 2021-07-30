@@ -106,12 +106,38 @@ $nuwebg : #232730
                 min-height: 40%
                 max-height: 40%
                 display: flex
-                justify-content: center
+                justify-content: space-between
                 align-items: center
                 text-align: justify
-                padding: 20px
                 canvas
-                    max-width: 100%
+                    max-width: 80%
+                .btnsk
+                    min-width: 20%
+                    min-height: 100%
+                    margin-bottom: 35px
+                    display: flex
+                    flex-wrap: wrap
+                    flex-direction: row
+                    justify-content: space-between
+                    .noactivo
+                        opacity: 0.25
+                    button
+                        background-color: rgba(0,0,0,0)
+                        font-weight: 700
+                        font-size: 0.8rem
+                        padding: 5px
+                        text-align: center
+                        border: 1px solid white
+                        min-width: 85%
+                        margin: 10px auto
+                        border-radius: 5px
+                    .hs
+                        color: lightgreen
+                        border-color: lightgreen
+                    .ss
+                        color: orange
+                        border-color: orange
+                    
             .participacion
                 display: flex
                 justify-content: center

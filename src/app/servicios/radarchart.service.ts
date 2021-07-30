@@ -16,25 +16,37 @@ export class RadarchartService {
       events:[],
       scales:{
         yAxes:[
+          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat',}}
+        ],
+        xAxes:[
+          {ticks:{fontColor:'white',fontFamily:'Montserrat'}}
+        ]
+        },
+    },
+    etiquetas : ['Angular','Python','Javascript','Typescript','CSS'],
+    tipo : 'bar',
+    leyenda : false,
+    datos: [{data: [12,14,51,21,95].sort().reverse(),backgroundColor:'lightgreen'}]
+  }
+
+  softskills:grafica = {
+    opciones : {
+      responsive:true,
+      animation:{duration:0},
+      events:[],
+      scales:{
+        yAxes:[
           {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat'}}
         ],
         xAxes:[
           {ticks:{fontColor:'white',fontFamily:'Montserrat'}}
         ]
         },
-      },
-    etiquetas : ['Angular','Python','Javascript','Typescript','CSS'],
-    tipo : 'bar',
-    leyenda : false,
-    datos: [{data: [12,14,51,21,95],backgroundColor:'lightgreen'}]
-  }
-
-  softskills:grafica = {
-    opciones : {responsive: true,scales: {yAxes:[{ticks: {beginAtZero:true}}]}},
+    },
     etiquetas : ['En Equipo','Resolutividad','Comunicación','Análisis','Inglés'],
     tipo : 'bar',
     leyenda : false,
-    datos: [{data: [55,60,60,95,60]}]
+    datos: [{data: [98,51,23,24,87].sort().reverse(),backgroundColor:'orange'}]
   }
 
 }

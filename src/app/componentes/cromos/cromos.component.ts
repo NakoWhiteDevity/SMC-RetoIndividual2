@@ -11,6 +11,12 @@ export class CromosComponent implements OnInit {
   constructor( public _rc:RadarchartService ) { }
 
   anre:boolean = true ; girar(){this.anre = !this.anre;} ;
+  skbl:boolean = true ; 
+  
+  girar2(skill:string):void{
+    if(skill == 'hard' && this.skbl == false){ this.skbl = true }
+    if(skill == 'soft' && this.skbl == true){ this.skbl = false }
+  }
 
   ngOnInit(): void {}
 

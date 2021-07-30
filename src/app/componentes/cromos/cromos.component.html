@@ -33,24 +33,29 @@
             </div>
 
             <div class="datacanvas">
-                <canvas baseChart
+                
+                <div class="btnsk">
+                    <button [ngClass]="{'hs':true,'noactivo':!this.skbl}" (click)="girar2('hard')" >Hard S.</button>
+                    <button [ngClass]="{'ss':true,'noactivo':this.skbl}" (click)="girar2('soft')" >Soft S.</button>
+                </div>
+                
+                <canvas *ngIf="skbl" baseChart
                 [datasets]="_rc.hardskills.datos"
                 [labels]="_rc.hardskills.etiquetas"
                 [options]="_rc.hardskills.opciones"
                 [legend]="_rc.hardskills.leyenda"
                 [chartType]="_rc.hardskills.tipo">
                 </canvas>
-                
-                <!--
-                <canvas baseChart
+
+                <canvas *ngIf="!skbl" baseChart
                 [datasets]="_rc.softskills.datos"
                 [labels]="_rc.softskills.etiquetas"
                 [options]="_rc.softskills.opciones"
                 [legend]="_rc.softskills.leyenda"
                 [chartType]="_rc.softskills.tipo">
                 </canvas>
-                -->
                 
+
             </div>
 
             <div class="participacion">
