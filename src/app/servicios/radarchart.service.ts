@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ChartData, ChartDataSets, ChartOptions, ChartType } from 'chart.js';
+import { ChartData, ChartDataSets, ChartOptions, ChartType , Chart } from 'chart.js';
 import { Label } from 'ng2-charts';
 
 @Injectable({
@@ -7,10 +7,22 @@ import { Label } from 'ng2-charts';
 })
 export class RadarchartService {
 
-  constructor() { }
-
+  constructor(){}
+  
   hardskills:grafica = {
-    opciones : { animation:{duration:0} ,events:[],responsive: true,scales: {xAxes:[{ticks:{fontColor:'white'}}],yAxes:[{ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white'}}]}},
+    opciones : {
+      responsive:true,
+      animation:{duration:0},
+      events:[],
+      scales:{
+        yAxes:[
+          {ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white',fontFamily:'Montserrat'}}
+        ],
+        xAxes:[
+          {ticks:{fontColor:'white',fontFamily:'Montserrat'}}
+        ]
+        },
+      },
     etiquetas : ['Angular','Python','Javascript','Typescript','CSS'],
     tipo : 'bar',
     leyenda : false,
@@ -34,3 +46,5 @@ interface grafica {
   leyenda:boolean,
   datos:ChartDataSets[]
 }
+
+//opciones : {animation:{duration:0} ,events:[],responsive: true,scales: {xAxes:[{ticks:{fontColor:'white'}}],yAxes:[{ticks: {beginAtZero:true,maxTicksLimit:6,autoSkip:true,fontColor:'white'}}]}},
