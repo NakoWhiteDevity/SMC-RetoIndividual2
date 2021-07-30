@@ -10,16 +10,11 @@ export class RadarchartService {
   constructor() { }
 
   hardskills:grafica = {
-    //opciones : {responsive: true,scales: {yAxes:[{ticks: {beginAtZero:true}}]}},
-    opciones : {
-      responsive: true,
-      scales: {yAxes:[{ticks: {beginAtZero:true}}]},
-      plugins:{legend:{labels:{font:{size:50}}}}
-    },
+    opciones : {responsive: true,scales: {yAxes:[{ticks: {beginAtZero:true}}]}},
     etiquetas : ['Angular','Python','Javascript','Typescript','CSS'],
     tipo : 'bar',
     leyenda : false,
-    datos: [{data: [80,45,90,91,31]}]
+    datos: [{data: [80,45,90,91,31],backgroundColor:'lightgreen'}]
   }
 
   softskills:grafica = {
